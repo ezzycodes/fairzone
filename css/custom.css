@@ -32,7 +32,7 @@ a:hover,a:focus{ text-decoration: none}
 
 /*Preloader css*/
 #loading{
-    background-color: #ffcb0f;
+    background-color: #41c73c;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -223,7 +223,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin-bottom:20px;
 }
 .carousel-caption h1.second_heading {
-    color:#ffcb0f;
+    color:#41c73c;
     margin-bottom:35px;
 }
 .carousel-caption > h3 {
@@ -280,7 +280,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 .about_content > h2 {
     font-size: 40px;
     margin: 90px 0 15px;
-    color:#ffcb0f;
+    color:#41c73c;
 }
 .about_content > h3 {
     font-size: 30px;
@@ -343,20 +343,20 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     background-size:cover;
     position:relative;
     padding-bottom: 102px;
-    border-bottom:2px solid #ffcb0f;
+    border-bottom:2px solid #90d165;
 }
 #portfolio::before{
     position:absolute;
     content:"";
     height:100%;
     width:100%;
-    background: rgba(255,203,15,0.85);
+    background: #90d165;
     top:0;
     left:0;
 }
-.portfolio_area{ position:relative;color:#fff;}
+.portfolio_area{ position:relative;color:#282828;}
 .portfolio_area h2 {
-    color: #fff;
+    color: #282828;
     margin: 65px 0 34px;
 }
 /* Portfolio filters */
@@ -374,13 +374,13 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 #filters > button:hover {
     border: 1px solid #282828;
-    color: #282828;
+    color: #3f3f3f;
 }
 #filters > button.is-checked {
-    background: #282828;
+    background: #5c5b5b;
 }
 #filters > button.is-checked:hover {
-    color: #fff;
+    color: #282828;
 }
 .grid{margin: 0 -6px;}
 .grid-item{border:6px solid transparent;}
@@ -417,7 +417,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 .grid-item:hover .portfolio_hover_area {opacity: 1;}
 .portfolio_hover_area .fa {
-    background: #ffcb0f none repeat scroll 0 0;
+    background: #41c73c none repeat scroll 0 0;
     border: 2px solid transparent;
     border-radius: 5px;
     border-radius: 5px;
@@ -437,9 +437,9 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 .portfolio_hover_area > a:first-child{  margin-right: 10px;}
 .portfolio_hover_area .fa:hover{
-    border:1px solid #ffcb0f;
+    border:1px solid #41c73c;
     background:transparent;
-    color:#ffcb0f;
+    color:#41c73c;
 }
 
 /* Testimonial */
@@ -528,7 +528,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 /* Contact form */
 #contact_form {
-    background: #fedb5d none repeat scroll 0 0;
+    background: #41c73c none repeat scroll 0 0;
     padding:27px 0 32px;
 }
 #contact_form h2 {
