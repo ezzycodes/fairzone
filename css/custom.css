@@ -581,7 +581,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 /* Footer */
 footer {
-    background: url(../images/footer_bg.jpg)no-repeat;
+    background: url(../images/construction-bg.png)no-repeat;
     background-size:cover;
     position:relative;
     padding-top:45px;
@@ -628,7 +628,7 @@ footer::after {
     margin: 32px 0 0;
 }
 .footer_social_icon .fa {
-    background: #ffcb0f none repeat scroll 0 0;
+    background: #41c73c none repeat scroll 0 0;
     border-radius: 100%;
     color: #222;
     font-size: 20px;
@@ -638,7 +638,7 @@ footer::after {
     width: 45px;
 }
 .footer_item .footer_social_icon .fa:hover,.footer_item .footer_social_icon .fa:focus {
-    background: #d7a300 none repeat scroll 0 0;
+    background: #41c73c none repeat scroll 0 0;
 }
 /* Footer Explore */
 .footer_menu .fa {
@@ -694,10 +694,10 @@ footer::after {
     margin-top:55px;
 }
 .footer_bottom a {
-    color: #ffcb0f;
+    color: #41c73c;
 }
 .footer_bottom a:hover,.footer_bottom a:focus {
-    color: #d7a300;
+    color: #41c73c;
 }
 /* ScrollUP */
 #scrollUp {
