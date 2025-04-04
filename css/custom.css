@@ -276,6 +276,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 /* About */
 .about_content {
     margin-right: 25px;
+    
 }
 .about_content > h2 {
     font-size: 40px;
@@ -296,7 +297,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin: 18px 0 60px;
 }
 .about_bg {
-    background: url(../images/about_bg.png)no-repeat right;
+    background: url(../images/aboutus_bg.png)no-repeat right;
 }
 
 /*Head Title*/
@@ -584,7 +585,7 @@ footer {
     background: url(../images/construction-bg.png)no-repeat;
     background-size:cover;
     position:relative;
-    padding-top:45px;
+    padding-top:40px;
 }
 footer::before {
     background: rgba(255, 255, 255, 0.33) none repeat scroll 0 0;
@@ -712,6 +713,50 @@ footer::after {
 #scrollUp:hover {
     background: url(../images/top.png)no-repeat scroll 0 -40px;
 }
+
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .whatsapp-icon {
+    background-color: #27a555;
+    color: white;
+    padding: 0px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 24px; /* Increased from 24px */
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover .whatsapp-icon {
+    transform: scale(1.1);
+  }
+
+  .tooltip-text {
+    margin-left: 12px;
+    background-color: white;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .whatsapp-float:hover .tooltip-text {
+    opacity: 1;
+  }
 
 /* Responsive Styles for various devices */
 @media (min-width: 1600px) {
