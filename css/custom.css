@@ -173,7 +173,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 .navbar-brand {
     height: auto;
-    padding: 20px 15px;
+    padding: 10px 10px;
 }
 #navbar-menu {
     margin: 6px 0;
@@ -191,89 +191,112 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 .attr-nav > ul > li > a:hover,.attr-nav > ul > li > a:focus {
     color: #41c73c;
 }
-/* Carousel */
+
+
+/* Carousel - Banner-like and Responsive */
 .home .carousel {
     position: relative;
-    height: 700px;
-    display: inline-block;
+    width: 100%;
+    overflow: hidden;
 }
-.home .carousel .item img{
-    width:100%;
-    height: 700px;
+
+.home .carousel .item img {
+    width: 100%;
+    height: auto;
+    max-height: 550px; /* banner-like height */
+    display: block;
+    object-fit: cover;
 }
-/*.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-    height: 700px;
-}*/
+
 .carousel .overlay {
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
 }
+
 .carousel-caption {
     left: 7%;
     right: 7%;
-    top: 70px;
+    top: 50px;
 }
+
 .carousel-caption h1 {
     color: #fff;
-    margin-bottom:20px;
+    margin-bottom: 15px;
 }
-.carousel-caption h1.second_heading {
-    color:#41c73c;
-    margin-bottom:35px;
+
+
+    .carousel-caption h3.carousel_tag {
+    color: #41c73c;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    font-family: "Oleo Script";
+    font-size: 50px;
 }
+
 .carousel-caption > h3 {
     color: #fff;
-    font-family: "futura_ltbook",sans-serif;
-    font-size: 40px;
+    font-family: "futura_ltbook", sans-serif;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-transform: inherit;
+    font-size: 36px;
 }
+
 .carousel-caption > p {
-    font-size: 23px;
-    line-height: 28px;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 24px;
+    font-family: "Oleo Script";
 }
+
 .btn.know_btn {
-    background: #41c73c none repeat scroll 0 0;
+    background: #41c73c;
     border-radius: 30px;
     color: #fff;
-    font-family: "futura_ltbold",sans-serif;
+    font-family: "futura_ltbold", sans-serif;
     font-size: 16px;
     padding: 10px 20px;
     text-transform: uppercase;
-    border:1px solid transparent;
+    border: 1px solid transparent;
 }
+
 .carousel-caption .btn.know_btn {
-    margin-top: 64px;
+    margin-top: 40px;
 }
+
 .carousel-caption .btn.know_btn:last-child {
-    margin-left: 20px;
+    margin-left: 15px;
 }
+
 .btn.know_btn:hover,
 .btn.know_btn:focus {
     background: transparent;
-    color:#41c73c;
-    border:1px solid #41c73c;
+    color: #41c73c;
+    border: 1px solid #41c73c;
 }
 
-
-
-
-.carousel-control{
-    width:50px;
+.carousel-control {
+    width: 50px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    margin-top:-25px;
-    top:50%;
+    margin-top: -25px;
+    top: 50%;
 }
 
 /* About */
+
+.about_banner img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
 .about_content {
     margin-right: 25px;
     
@@ -776,6 +799,7 @@ footer::after {
 
 }
 
+/* Large desktops */
 @media (max-width: 1199px) {
     h1 {
         font-size: 50px;
@@ -790,8 +814,20 @@ footer::after {
     .carousel-caption {
         left: 3%;
         right: 3%;
-        top:40px;
+        top:35px;
     }
+
+    .carousel-caption h3.carousel_tag { 
+        font-size: 38px; 
+    }
+
+    .carousel-caption > h3 {
+        font-size: 32px;
+    }
+    .carousel-caption > p {
+        font-size: 18px;
+    }
+
 
     .about_banner > img {
         width: 334px;
@@ -824,6 +860,8 @@ footer::after {
 
 }
 
+/* Tablets */
+
 @media (max-width: 991px) {
     .list-inline.info > li {
         padding: 0 12px 0 0;
@@ -844,6 +882,25 @@ footer::after {
     nav.navbar.bootsnav ul.nav > li > a {
         padding: 12px 0;
     }
+
+    .carousel-caption { 
+        top: 25px; 
+    }
+
+    .carousel-caption h3.carousel_tag { 
+        font-size: 30px; 
+    }
+
+    .carousel-caption > h3 { 
+        font-size: 28px; 
+    }
+    .carousel-caption > p { 
+        font-size: 16px; 
+    }
+    .carousel-caption .btn.know_btn { 
+        margin-top: 30px; 
+    }
+
     .container.about_bg {
         background-position: bottom 100px center;
     }
@@ -878,6 +935,7 @@ footer::after {
 
 }
 
+/* Mobiles */
 @media (max-width: 767px) {
     h1 {
         font-size: 32px;
@@ -899,13 +957,19 @@ footer::after {
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
         height: 450px;
     }
+
+    .carousel-caption h3.carousel_tag { 
+        font-size: 24px; 
+        padding-top: 20px; 
+    }
+
     .carousel-caption > h3 {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 10px;
     }
     .carousel-caption > p {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .carousel-caption .btn.know_btn {
         margin-top: 35px;
@@ -913,6 +977,11 @@ footer::after {
     .carousel-caption .btn.know_btn:last-child {
         margin-left: 30px;
     }
+
+    .about_banner img {
+      max-width: 60%;
+    }
+
     .about_content > h2 {
         font-size: 26px;
         margin-top: 70px;
@@ -946,6 +1015,7 @@ footer::after {
 
 }
 
+/* Small phones */
 @media (max-width: 479px) {
     h1 {
         font-size: 30px;
@@ -967,26 +1037,33 @@ footer::after {
         width: 100%;
         padding: 0 8px;
     }
+    
+    .carousel-h1{
+        font-size: 20px;
+    }
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
         height: 420px;
     }
     .carousel-caption {
-        top: 5px;
+        top: 8px;
     }
-    .carousel-caption h1.second_heading {
-        margin-bottom: 10px;
+    /* .carousel-caption h1.second_heading { */
+    .carousel-caption h3.carousel_tag {
+        font-size: 18px; 
+        padding-top: 10px;
+        margin-bottom: 8px;
     }
     .carousel-caption > h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .carousel-caption > p {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 14px;
     }
     .btn.know_btn {
-        font-size: 14px;
-        padding: 8px 14px;
+        font-size: 10px;
+        padding: 4px 10px;
     }
     .carousel-caption .btn.know_btn {
         margin-top: 10px;
