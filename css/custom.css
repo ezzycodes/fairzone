@@ -320,7 +320,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin: 18px 0 60px;
 }
 .about_bg {
-    background: url(../images/aboutus_bg.png)no-repeat right;
+    background: url(../images/about_bg1.png)no-repeat right;
 }
 
 /*Head Title*/
@@ -1041,6 +1041,8 @@ footer::after {
     .carousel-h1{
         font-size: 20px;
     }
+
+
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
         height: 420px;
     }
