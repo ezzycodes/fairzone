@@ -888,7 +888,7 @@ footer::after {
     }
 
     .carousel-caption h3.carousel_tag { 
-        font-size: 30px; 
+        font-size: 28px; 
     }
 
     .carousel-caption > h3 { 
@@ -959,7 +959,7 @@ footer::after {
     }
 
     .carousel-caption h3.carousel_tag { 
-        font-size: 24px; 
+        font-size: 22px; 
         padding-top: 20px; 
     }
 
@@ -1044,28 +1044,28 @@ footer::after {
 
 
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
-        height: 420px;
+        height: 490px;
     }
     .carousel-caption {
-        top: 8px;
+        top: 6px;
     }
     /* .carousel-caption h1.second_heading { */
     .carousel-caption h3.carousel_tag {
-        font-size: 18px; 
-        padding-top: 10px;
-        margin-bottom: 8px;
+        font-size: 15px; 
+        padding-top: 8px;
+        margin-bottom: 6px;
     }
     .carousel-caption > h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 15px;
+        margin-bottom: 8px;
     }
     .carousel-caption > p {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 14px;
     }
     .btn.know_btn {
-        font-size: 10px;
-        padding: 4px 10px;
+        font-size: 9px;
+        padding: 4px 8px;
     }
     .carousel-caption .btn.know_btn {
         margin-top: 10px;
