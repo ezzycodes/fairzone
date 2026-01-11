@@ -9,6 +9,7 @@
          url('futuralt-bold-webfont.svg#futura_ltbold') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -21,6 +22,7 @@
          url('futuralt-book-webfont.svg#futura_ltbook') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -29,4 +31,5 @@
   src: url('GillSansMT-UltraBold.eot?#iefix') format('embedded-opentype'),  url('GillSansMT-UltraBold.woff') format('woff'), url('GillSansMT-UltraBold.ttf')  format('truetype'), url('GillSansMT-UltraBold.svg#GillSansMT-UltraBold') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }

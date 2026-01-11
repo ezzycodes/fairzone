@@ -5,14 +5,15 @@
         <meta charset="utf-8">
         <title>Fairzone Trade CC -- About Us Page</title>
         <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Custom Fonts -->
         <link rel="stylesheet" href="custom-font/fonts.css" />
+        <link rel="preload" as="font" href="custom-font/futuralt-book-webfont.woff" type="font/woff" crossorigin>
+        <link rel="preload" as="font" href="custom-font/futuralt-bold-webfont.woff" type="font/woff" crossorigin>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <!-- Bootsnav -->
         <link rel="stylesheet" href="css/bootsnav.css">
         <!-- Fancybox -->
@@ -24,28 +25,6 @@
         <![endif]-->
     </head>
     <body>
-
-        <!-- Preloader -->
-
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                    <div class="object"></div>
-                </div>
-            </div>
-        </div>
-
-        <!--End off Preloader -->
-
         <!-- Header -->
         <header>
             
@@ -67,6 +46,7 @@
                             <li><a href="index.html">Home</a></li>                    
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
                         </ul>
                     </div>
                 </div>   
@@ -239,7 +219,7 @@
                     <div class="col-lg-4 col-sm-7">
                         <div class="footer_item">
                             <h4>About Company</h4>
-                            <img class="logo" src="images/logo2.png" alt="Construction" />
+                            <img class="logo" src="images/logo2.png" alt="Construction" loading="lazy" />
                             <p>Backed by years of expertise and a skilled team, we are committed to exceeding expectations with top-tier craftsmanship and customer-focused service. Whether you're looking for structural steelwork, security enhancements, or custom metal solutions, Fairzone Trade CC is your trusted partner in strength and security.</p>
 
                             <ul class="list-inline footer_social_icon">
@@ -258,6 +238,7 @@
                                 <li><a href="index.html"><span class="fa fa-play"></span> Home</a>
                                 <li><a href="#"><span class="fa fa-play"></span> About Us</a>
                                 <li><a href="contact.html"><span class="fa fa-play"></span> Contact Us</a>
+                                <li><a href="portfolio.html"><span class="fa fa-play"></span> Portfolio</a>
                                 <li><a href="privacypolicy.html"><span class="fa fa-play"></span> Privacy Policy</a>
                             </ul>
                         </div>
@@ -291,20 +272,20 @@
         </footer><!-- Footer end -->
 
         <!-- JavaScript -->
-        <script src="js/jquery-1.12.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script defer src="js/jquery-1.12.1.min.js"></script>
+        <script defer src="js/bootstrap.min.js"></script>
 
         <!-- Bootsnav js -->
-        <script src="js/bootsnav.js"></script>
+        <script defer src="js/bootsnav.js"></script>
 
         <!-- JS Implementing Plugins -->
-        <script src="js/isotope.js"></script>
-        <script src="js/isotope-active.js"></script>
-        <script src="js/jquery.fancybox.js?v=2.1.5"></script>
+        <script defer src="js/isotope.js"></script>
+        <script defer src="js/isotope-active.js"></script>
+        <script defer src="js/jquery.fancybox.js?v=2.1.5"></script>
 
         <!-- <script src="js/jquery.scrollUp.min.js"></script> -->
 
-        <script src="js/main.js"></script>
+        <script defer src="js/main.js"></script>
 
         <!-- Whatsapp Sticky Button-->
         <a href="https://wa.me/27817699781" class="whatsapp-float" target="_blank">

@@ -5,14 +5,17 @@
         <meta charset="utf-8">
         <title>Fairzone Trade CC -- About Us Page</title>
         <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Custom Fonts -->
         <link rel="stylesheet" href="custom-font/fonts.css" />
+        <!-- Preload primary font to improve text rendering -->
+        <link rel="preload" as="font" href="custom-font/futuralt-book-webfont.woff" type="font/woff" crossorigin>
+        <link rel="preload" as="font" href="custom-font/futuralt-bold-webfont.woff" type="font/woff" crossorigin>
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
         <!-- Bootsnav -->
         <link rel="stylesheet" href="css/bootsnav.css">
         <!-- Fancybox -->
@@ -27,7 +30,7 @@
 
         <!-- Preloader -->
 
-        <div id="loading">
+        <!-- <div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
                     <div class="object"></div>
@@ -42,7 +45,7 @@
                     <div class="object"></div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--End off Preloader -->
 
@@ -67,6 +70,7 @@
                             <li><a href="index.html">Home</a></li>                    
                             <li><a href="#">About Us</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
                         </ul>
                     </div>
                 </div>   
@@ -107,7 +111,7 @@
                         <div class="overlay">
                             <div class="carousel-caption">
                                 <!-- <h3>We are Certified Engineers</h3> -->
-                                <h3 class="carousel_tag">Steel Fabrication, Maintenance and Construction</h3>
+                                <h3 class="carousel_tag">Steel Fabrication, Construction and Maintenance</h3>
                                 <p>Please get in touch today and let’s build something great together</p>
                                 <a  class="btn know_btn" href="https://wa.me/27817699781" target="_blank">WhatsApp</a>
                                 <a  class="btn know_btn" href="mailto:info@fairzonefixit.co.za" target="_blank">Email Us</a>
@@ -151,7 +155,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-lg-offset-1">
                         <div class="about_banner">
-                            <img src="images/man.png" alt="" />
+                            <img src="images/man.png" alt="Fairzone representative" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -162,7 +166,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6" >
                     <div class="about_banner">
-                        <img src="images/about1.jpg"  alt="Welding and Fabrication">
+                        <img src="images/about1.jpg"  alt="Welding and Fabrication" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6">
@@ -224,6 +228,165 @@
               </div>
             </div>
           </div>
+
+<!-- Portfolio -->
+        <section id="portfolio">
+            <div class="container portfolio_area text-center">
+                <h2>Our Projects & Portfolio</h2>
+                <p >At Fairzone Trade CC, we take pride in delivering high-quality, custom steel fabrication, security, and construction solutions tailored to our clients' needs. Our portfolio showcases a diverse range of projects, from large-scale steel structures to intricate security enhancements and precision metalwork.With a commitment to excellence, durability, and innovation, we have successfully completed projects for residential, commercial, and industrial clients. Browse through our work to see how we bring strength, security, and craftsmanship together in every project we undertake.Contact us to discuss how we can bring your vision to life!
+                </p>
+                <a  class="btn know_btn">Contact us</a>
+                
+
+                <div id="filters">
+                    <button class="button is-checked" data-filter=".steelnconstruction">Steel Fabrication & Construction</button>
+                    <button class="button" data-filter=".security">Security Solutions</button>
+                    <button class="button" data-filter=".roofing">Roofing & Waterproofing</button>
+                    <button class="button" data-filter=".custom">Custom Metalwork & Decor</button>
+                    <button class="button is-checked" data-filter="*">Show All</button>
+                </div>
+                <!-- Portfolio grid -->		
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item grid-item--width2 grid-item--height2 steelnconstruction roofing">
+                        <img alt="" src="images/projects/beams.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/beams.jpg" data-fancybox-group="gallery" title="Beams"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction roofing">
+                        <img alt="" src="images/projects/site1.jpeg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/site1.jpeg" data-fancybox-group="gallery" title="Carport"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item steelnconstruction roofing">
+                        <img alt="" src="images/projects/roofing2.jpeg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/roofing2.jpeg" data-fancybox-group="gallery" title="Carport"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/stairs1.png" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/stairs1.png" data-fancybox-group="gallery" title="Carport"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/overhead structure.png" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/overhead structure.png" data-fancybox-group="gallery" title="Carport"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>   
+                    </div>
+
+                    <div class="grid-item steelnconstruction roofing">
+                        <img alt="" src="images/projects/ferndale1.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/ferndale1.jpg" data-fancybox-group="gallery" title="Beams"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item roofing">
+                        <img alt="" src="images/projects/ferndale2.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/ferndale2.jpg" data-fancybox-group="gallery" title="Roofing and Waterproofing"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item custom">
+                        <img alt="" src="images/projects/address.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/address.jpg" data-fancybox-group="gallery" title="Customized Address Design"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item security">
+                        <img alt="" src="images/projects/fence.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/fence.jpg" data-fancybox-group="gallery" title="Clear Vu Fence Installation"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item security custom">
+                        <img alt="" src="images/projects/gate.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/gate.jpg" data-fancybox-group="gallery" title="Gates"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item custom steelnconstruction">
+                        <img alt="" src="images/projects/shade.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/shade.jpg" data-fancybox-group="gallery" title="Shade"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/stairs.jpg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/stairs.jpg" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/bins.jpeg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/bins.jpeg" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>    
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/forklift.png" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/forklift.png" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction roofing">
+                        <img alt="" src="images/projects/drywalling.png" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/drywalling.png" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction custom">
+                        <img alt="" src="images/projects/ailses.jpeg" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/ailses.jpeg" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                    <div class="grid-item steelnconstruction">
+                        <img alt="" src="images/projects/manatwork.png" loading="lazy" >
+                        <div class="portfolio_hover_area">
+                            <a class="fancybox" href="images/projects/manatwork.png" data-fancybox-group="gallery" title="Staircase"><span class="fa fa-search"></span></a>
+                            <a href="#"><span class="fa fa-link"></span></a>
+                        </div>  
+                    </div>
+
+                </div><!-- Portfolio grid end -->
+            </div>
+        </section><!-- Portfolio end -->        
         
         <!-- Footer -->
         <footer>
@@ -233,7 +396,7 @@
                     <div class="col-lg-4 col-sm-7">
                         <div class="footer_item">
                             <h4>About Company</h4>
-                            <img class="logo" src="images/logo2.png" alt="Construction" />
+                            <img class="logo" src="images/logo2.png" alt="Construction" loading="lazy" />
                             <p>Backed by years of expertise and a skilled team, we are committed to exceeding expectations with top-tier craftsmanship and customer-focused service. Whether you're looking for structural steelwork, security enhancements, or custom metal solutions, Fairzone Trade CC is your trusted partner in strength and security.</p>
 
                             <ul class="list-inline footer_social_icon">
@@ -252,6 +415,7 @@
                                 <li><a href="index.html"><span class="fa fa-play"></span> Home</a>
                                 <li><a href="#"><span class="fa fa-play"></span> About Us</a>
                                 <li><a href="contact.html"><span class="fa fa-play"></span> Contact Us</a>
+                                <li><a href="portfolio.html"><span class="fa fa-play"></span> Portfolio</a>
                                 <li><a href="privacypolicy.html"><span class="fa fa-play"></span> Privacy Policy</a>
                             </ul>
                         </div>
@@ -285,20 +449,20 @@
         </footer><!-- Footer end -->
 
         <!-- JavaScript -->
-        <script src="js/jquery-1.12.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script defer src="js/jquery-1.12.1.min.js"></script>
+        <script defer src="js/bootstrap.min.js"></script>
 
         <!-- Bootsnav js -->
-        <script src="js/bootsnav.js"></script>
+        <script defer src="js/bootsnav.js"></script>
 
         <!-- JS Implementing Plugins -->
-        <script src="js/isotope.js"></script>
-        <script src="js/isotope-active.js"></script>
-        <script src="js/jquery.fancybox.js?v=2.1.5"></script>
+        <script defer src="js/isotope.js"></script>
+        <script defer src="js/isotope-active.js"></script>
+        <script defer src="js/jquery.fancybox.js?v=2.1.5"></script>
 
         <!-- <script src="js/jquery.scrollUp.min.js"></script> -->
 
-        <script src="js/main.js"></script>
+        <script defer src="js/main.js"></script>
 
         <!-- Whatsapp Sticky Button-->
         <a href="https://wa.me/27817699781" class="whatsapp-float" target="_blank">
