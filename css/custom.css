@@ -277,6 +277,8 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     background: transparent;
     color: #41c73c;
     border: 1px solid #41c73c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(65, 199, 60, 0.3);
 }
 
 .carousel-control {
@@ -337,12 +339,22 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 #why_us h2 {
     margin: 70px 0 20px;
 }
-.why_us_item{ padding-top: 55px;}
+.why_us_item{ 
+    padding-top: 55px;
+    transition: all 0.3s ease;
+}
+.why_us_item:hover {
+    transform: translateY(-5px);
+}
 #why_us .fa{
     border-radius: 100%;
     box-shadow: 0 0 0 10px #33d12d, 0 0 0 20px #90d165, 0 0 0 30px #beeca4;
     padding: 38px;
     font-size:45px;
+    transition: all 0.3s ease;
+}
+.why_us_item:hover .fa {
+    box-shadow: 0 0 0 10px #33d12d, 0 0 0 20px #90d165, 0 0 0 30px #beeca4, 0 8px 20px rgba(65, 199, 60, 0.2);
 }
 .why_us_item > h4 {
     font-size: 15px;
@@ -354,11 +366,31 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     margin: 85px 0 50px;
     text-align:center;
 }
+.service_item {
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service_item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(65, 199, 60, 0.15);
+}
 .service_item > h3 {
-    margin: 25px 0 15px;
+    margin: 18px 0 12px;
+}
+.service_item > p {
+    margin-bottom: 15px;
 }
 .service_item .btn.know_btn {
-    margin: 20px 0 100px;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 /* Portfolio */
@@ -423,6 +455,9 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 .grid-item img{
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     -o-transition: all 0.6s;
@@ -651,7 +686,8 @@ footer::after {
 .list-inline.footer_social_icon {
     margin: 32px 0 0;
 }
-.footer_social_icon .fa {
+.footer_social_icon .fa,
+.footer_social_icon .fa-brands {
     background: #41c73c none repeat scroll 0 0;
     border-radius: 100%;
     color: #222;
@@ -660,8 +696,14 @@ footer::after {
     padding: 12px;
     text-align: center;
     width: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer_item .footer_social_icon .fa:hover,.footer_item .footer_social_icon .fa:focus {
+.footer_item .footer_social_icon .fa:hover,
+.footer_item .footer_social_icon .fa:focus,
+.footer_item .footer_social_icon .fa-brands:hover,
+.footer_item .footer_social_icon .fa-brands:focus {
     background: #41c73c none repeat scroll 0 0;
 }
 /* Footer Explore */
@@ -860,6 +902,59 @@ footer::after {
 
 }
 
+/* Medium Tablets (iPad) */
+@media (max-width: 900px) and (min-width: 768px) {
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+    }
+    .carousel-caption h3.carousel_tag {
+        font-size: 28px;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+    .carousel-caption > h3 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    .carousel-caption > p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .carousel-caption .btn.know_btn {
+        margin-top: 20px;
+        padding: 11px 22px;
+        font-size: 13px;
+    }
+    
+    /* Services: 2 columns on tablet instead of 3 */
+    #services .col-md-4 {
+        width: 48%;
+        margin: 0 2% 30px 0;
+        float: left;
+    }
+    #services .col-md-4:nth-child(2n+1) {
+        clear: left;
+    }
+    
+    /* Testimonials: 2 per row on tablet */
+    #testimonial .col-md-4 {
+        width: 48%;
+        margin: 0 2% 30px 0;
+        float: left;
+    }
+    #testimonial .col-md-4:nth-child(3) {
+        clear: left;
+    }
+    
+    .grid-item {
+        width: 33.333%;
+    }
+    .grid-item--width2 {
+        width: 66.666%;
+    }
+}
+
 /* Tablets */
 
 @media (max-width: 991px) {
@@ -905,15 +1000,18 @@ footer::after {
         background-position: bottom 100px center;
     }
     .grid-item {
-        height: 255px !important;
-        width:50%;
+        height: 240px !important;
+        width: 50%;
     }
-    .grid-item--height2 { height: 500px !important; width:100%;}
+    .grid-item--height2 {
+        height: 480px !important;
+        width: 100%;
+    }
     .grid-item .portfolio_hover_area .fa {
-        margin-top: 90px;
+        margin-top: 85px;
     }
     .grid-item--width2 .portfolio_hover_area .fa {
-        margin-top: 217px;
+        margin-top: 200px;
     }
     #contact_form {
         text-align: center;
@@ -952,30 +1050,36 @@ footer::after {
         margin-left: 15px;
     }
     .carousel-caption {
-        top: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
-        height: 450px;
+        height: 500px;
     }
 
     .carousel-caption h3.carousel_tag { 
-        font-size: 22px; 
-        padding-top: 20px; 
+        font-size: 26px; 
+        padding-top: 0px;
+        margin-bottom: 15px;
     }
 
     .carousel-caption > h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        margin-bottom: 15px;
     }
     .carousel-caption > p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 0;
     }
     .carousel-caption .btn.know_btn {
-        margin-top: 35px;
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 14px;
+        display: inline-block;
     }
     .carousel-caption .btn.know_btn:last-child {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .about_banner img {
@@ -1016,6 +1120,13 @@ footer::after {
 }
 
 /* Small phones */
+@media (max-width: 599px) {
+    .carousel-caption {
+        left: 3%;
+        right: 3%;
+    }
+}
+
 @media (max-width: 479px) {
     h1 {
         font-size: 30px;
@@ -1044,34 +1155,40 @@ footer::after {
 
 
     .carousel-inner > .item > a > img, .carousel-inner > .item > img {
-        height: 490px;
+        height: 380px;
+        min-height: 380px;
     }
     .carousel-caption {
-        top: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2%;
+        right: 2%;
     }
     /* .carousel-caption h1.second_heading { */
     .carousel-caption h3.carousel_tag {
-        font-size: 15px; 
-        padding-top: 8px;
-        margin-bottom: 6px;
+        font-size: 18px; 
+        padding-top: 0px;
+        margin-bottom: 10px;
     }
     .carousel-caption > h3 {
-        font-size: 15px;
-        margin-bottom: 8px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
     .carousel-caption > p {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 5px 0;
     }
     .btn.know_btn {
-        font-size: 9px;
-        padding: 4px 8px;
+        font-size: 11px;
+        padding: 8px 14px;
+        display: inline-block;
     }
     .carousel-caption .btn.know_btn {
-        margin-top: 10px;
+        margin-top: 12px;
     }
     .carousel-caption .btn.know_btn:last-child {
-        margin-left: 10px;
+        margin-left: 6px;
     }
     .about_content > h3 {
         font-size: 24px;
@@ -1080,14 +1197,27 @@ footer::after {
         width: 100%;
     }
     #filters > button {
-        font-size: 14px;
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+    .grid-item, .grid-sizer {
+        width: 50%;
     }
     .grid-item {
-        width:100%;
+        height: 220px !important;
     }
-    .grid-item--height2 { height: 255px !important;}
+    .grid-item--height2 {
+        height: 220px !important;
+        width: 50%;
+    }
+    .grid-item--width2 {
+        width: 50%;
+    }
+    .grid-item .portfolio_hover_area .fa {
+        margin-top: 70px;
+    }
     .grid-item--width2 .portfolio_hover_area .fa {
-        margin-top: 90px;
+        margin-top: 70px;
     }
     .list-inline.footer_social_icon > li {
         padding: 8px 3px;
